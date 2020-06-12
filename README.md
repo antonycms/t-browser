@@ -1,44 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">TBrowser 👋</h1>
 
-## Available Scripts
+<div align="center">
+  <img style="border-radius: 8px;" src="./assets/print.png"/>
+</div>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D6.14.4-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D12.17.0-blue.svg" />
+  <a href="https://github.com/kefranabg/readme-md-generator#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/antonycms/t-browser/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/antonycms/t-browser" />
+  </a>
+</p>
 
-### `yarn start`
+<!-- > Projeto Ecoleta, realizado durante o evento Next Level Week da Rocketseat -->
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🏠 [Homepage](https://github.com/antonycms/t-browser)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Requisitos
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- npm >=6.14.4
+- node >=12.17.0
 
-### `yarn build`
+## Tecnologias
+- Nodejs
+- Electron
+- React
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Lints
+- Prettier
+- Eslint
+- Editorconfig
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#
+## Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+yarn install
+```
+ou
+```sh
+npm install
+```
+#
+## Rodando o projeto
 
-### `yarn eject`
+```sh
+yarn dev
+```
+ou
+```sh
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#
+## Gerando uma build do projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+yarn dist
+```
+ou
+```sh
+npm run dist
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Antony Santos**
 
-## Learn More
+* Github: [@antonycms](https://github.com/antonycms)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deixe seu suporte
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deixe uma ⭐️ se esse projeto ajudou você!
+
+## 📝 Licença
+
+Copyright © 2020 [Antony Santos](https://github.com/antonycms).<br />
+Este projeto possui licença [MIT](https://github.com/antonycms/t-browser/blob/master/LICENSE).
+
+***
+_Este README foi gerado utilizando [readme-md-generator](https://github.com/kefranabg/readme-md-generator) ❤️_

@@ -1,6 +1,6 @@
 {
   "name": "t-browser",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Antony Santos",
     "email": "antonyc828@gmail.com",
@@ -47,7 +47,8 @@
     "electron-start": "electron .",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 &&  env NODE_ENV=development yarn electron .\"",
-    "dist": "yarn build && electron-builder --linux"
+    "dist:linux": "yarn build && electron-builder --linux",
+    "dist": "yarn build && electron-builder"
   },
   "eslintConfig": {
     "extends": "react-app"
