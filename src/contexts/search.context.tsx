@@ -9,7 +9,7 @@ interface IUrlContext {
 const UrlContext = createContext<IUrlContext>({} as IUrlContext);
 
 export const SearchProvider: React.FC = ({ children }) => {
-  const [url, setUrl] = useState<string>('http://github.com/antonycms');
+  const [url, setUrl] = useState<string>('https://github.com/antonycms/t-browser');
 
   return <UrlContext.Provider value={{ url, setUrl }}>{children}</UrlContext.Provider>;
 };

@@ -2,10 +2,12 @@ import React, { FormEvent, useContext, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import SearchContext from '../../contexts/search.context';
 
-import './styles.css';
+import { Container } from './styles';
 
 const SearchBar: React.FC = () => {
-  const [inputUrlData, setInputUrlData] = useState<string>('');
+  const [inputUrlData, setInputUrlData] = useState<string>(
+    'https://github.com/antonycms/t-browser',
+  );
 
   const searchContext = useContext(SearchContext);
 
@@ -22,21 +24,19 @@ const SearchBar: React.FC = () => {
   }
 
   return (
-    <header id="tbrowser-header">
-      <form id="search-bar-container">
+    <Container>
+      <form>
         <input
           onChange={(e) => setInputUrlData(e.target.value)}
           value={inputUrlData}
           type="text"
-          name=""
-          id=""
           placeholder="https://google.com"
         />
-        <button onClick={handleSubmit} type="submit" id="btn">
+        <button onClick={handleSubmit} type="submit">
           <FiSearch />
         </button>
       </form>
-    </header>
+    </Container>
   );
 };
 

@@ -8,15 +8,5 @@
 html, body, .App {
   height: 100%;
   width: 100%;
-  background-color: #282a36	;
-}
-
-.title {
-  color: #f8f8f2;	
-  font-weight: bold;
-}
-
-textarea:focus, input:focus{
-  outline: none;
-  border: 2px solid #6272a4 !important;
+  background-color: #282a36;
 }

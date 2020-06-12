@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useContext } from 'react';
 import SearchContext from '../../contexts/search.context';
+import ZoomContext from '../../contexts/zoom.context';
 
-import './styles.css';
+import { Container, Title, ViewContainer } from './styles';
 
 interface IWinView {
   width: number;
@@ -12,33 +13,30 @@ interface IWinView {
 }
 
 const WinView: React.FC<IWinView> = ({ width, height, userAgent, title }) => {
-  const zoom = 0.5;
-
-  const searchContext = useContext(SearchContext);
+  const { url } = useContext(SearchContext);
+  const { zoom } = useContext(ZoomContext);
 
   return (
-    <div id="winview-container">
-      <span className="title">
+    <Container>
+      <Title>
         {title} ({width}x{height})
-      </span>
-      <div
-        style={{
-          width: width * zoom,
-          height: height * zoom,
-          marginTop: 10,
-        }}
-      >
-        <webview
-          src={searchContext.url}
+      </Title>
+
+      <ViewContainer zoom={zoom} width={width} height={height}>
+        <webview // styled-components not work user-agent webview :(
+          src={url}
           useragent={userAgent}
           style={{
             width,
             height,
             transform: `scale(${zoom})`,
+            transformOrigin: 'left top',
+            border: '1px solid #c4c4c4',
+            borderRadius: 4,
           }}
         />
-      </div>
-    </div>
+      </ViewContainer>
+    </Container>
   );
 };
 

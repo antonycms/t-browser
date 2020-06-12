@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.css';
+import { Container, Header, ViewsContainer } from './styles';
 
 import { UserAgent } from '../../schemas/uger-agent';
 
@@ -9,15 +9,17 @@ import SearchBar from '../../components/SearchBar';
 
 const Home: React.FC = () => {
   return (
-    <div className="home-container">
-      <SearchBar />
+    <Container>
+      <Header>
+        <SearchBar />
+      </Header>
 
-      <div className="views-container">
+      <ViewsContainer>
         <WinView title="Desktop" userAgent={UserAgent.DESKTOP} width={1600} height={900} />
         <WinView title="IPad" userAgent={UserAgent.IPHONE} width={728} height={1024} />
         <WinView title="Iphone X" userAgent={UserAgent.IPHONE} width={375} height={812} />
-      </div>
-    </div>
+      </ViewsContainer>
+    </Container>
   );
 };
 
