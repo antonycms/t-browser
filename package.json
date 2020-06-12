@@ -81,7 +81,7 @@
         "nsis",
         "zip"
       ],
-      "icon": "assets/logo.png"
+      "icon": "public/assets/logo.png"
     },
     "nsis": {
       "oneClick": "false",
@@ -92,6 +92,7 @@
       "target": [
         "AppImage"
       ],
+      "icon": "public/assets/logo.png",
       "category": "Development"
     }
   }
