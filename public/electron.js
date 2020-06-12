@@ -15,6 +15,7 @@ async function createWindow() {
   win = new BrowserWindow({
     width: 1000,
     height: 600,
+    icon: path.resolve(__dirname, '..', 'assets', 'logo.png'),
     webPreferences: {
       webviewTag: true,
       nodeIntegration: true,
