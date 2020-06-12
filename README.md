@@ -31,6 +31,7 @@
 
 ## Tecnologias
 - Nodejs
+- Typescript
 - Electron
 - React
 
