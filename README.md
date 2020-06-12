@@ -19,7 +19,7 @@
   </a>
 </p>
 
-<!-- > Projeto Ecoleta, realizado durante o evento Next Level Week da Rocketseat -->
+> Um mini navegador, criado com Electron e React, para desenvolvimento, com múltiplos tamanhos de tela!
 
 ### 🏠 [Homepage](https://github.com/antonycms/t-browser)
 
@@ -72,7 +72,6 @@ npm run dist
 ```
 
 #
-
 👤 **Antony Santos**
 
 * Github: [@antonycms](https://github.com/antonycms)
