@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import SearchContext from '../../contexts/search.context';
 import ZoomContext from '../../contexts/zoom.context';
 
@@ -12,9 +12,25 @@ interface IWinView {
   userAgent: string;
 }
 
+interface IWillNavigateEvent {
+  url: string;
+  target: HTMLWebViewElement;
+}
+
 const WinView: React.FC<IWinView> = ({ width, height, userAgent, title }) => {
-  const { url } = useContext(SearchContext);
+  const { url, setUrl } = useContext(SearchContext);
   const { zoom } = useContext(ZoomContext);
+  let webviewRef: any = null;
+
+  useEffect(() => {
+    if (webviewRef) {
+      webviewRef.addEventListener('will-navigate', (event: IWillNavigateEvent) => {
+        if (event.url) {
+          setUrl(event.url);
+        }
+      });
+    }
+  }, [webviewRef, setUrl]);
 
   return (
     <Container>
@@ -26,6 +42,7 @@ const WinView: React.FC<IWinView> = ({ width, height, userAgent, title }) => {
         <webview // styled-components not work user-agent webview :(
           src={url}
           useragent={userAgent}
+          ref={(ref) => (webviewRef = ref)}
           style={{
             width,
             height,
