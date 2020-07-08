@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const StyleGlobal = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
@@ -10,3 +13,4 @@ html, body, .App {
   width: 100%;
   background-color: #282a36;
 }
+`;

@@ -7,7 +7,7 @@ const contextMenu = require('electron-context-menu');
 let win;
 Menu.setApplicationMenu(null);
 
-const indexPath = path.join(__dirname, '..', 'build', 'index.html');
+const indexPath = path.join(__dirname, 'index.html');
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 nativeTheme.themeSource = 'dark';
 
